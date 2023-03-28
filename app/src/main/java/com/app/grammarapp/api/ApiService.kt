@@ -9,6 +9,6 @@ import retrofit2.http.*
 interface ApiService {
 
     @POST(Endpoints.Apis.COMPLETIONS)
-    @Headers("Content-Type:application/json", "Authorization: Bearer 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")
+    @Headers("Content-Type:application/json", "Authorization: Bearer YOUR_API_KEY")
     suspend fun improEnglishAPI(@Body body: QueryParams): Response<English>
 }
